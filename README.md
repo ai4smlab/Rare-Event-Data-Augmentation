@@ -6,7 +6,7 @@
 
 <div align="center">
 
-## Agentic AI, Data Augmentation, Ontology, Image Synthesis, Image Generation, Rare-Event, Wildlife--Traffic Safety
+## Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife–Traffic as a Case Study
 
 **Alaa Khamis**  
 
