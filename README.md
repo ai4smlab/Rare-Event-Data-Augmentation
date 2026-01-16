@@ -18,8 +18,7 @@
 
 This repository accompanies the paper:
 
-> **Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife–Traffic as a Case Study**,  
-> submitted to **IEEE Access**.
+> **Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife–Traffic as a Case Study**, submitted to **IEEE Access**.
 
 The work addresses the challenge of **data scarcity in rare and safety-critical visual scenarios**, with a particular focus on **wildlife–traffic interactions**. Such events are highly stochastic, difficult to capture at scale, and often occur under adverse conditions (e.g., nighttime, fog, rural highways).
 
@@ -50,20 +49,23 @@ The result is a **controllable, scalable, and self-improving synthetic data augm
 **Figure:** Class diagram of the semantic ontology for wildlife–traffic image generation with examples.
 
 📄 **OWL Specification:**  
-- `images/Ontolog.owl`
+- [`Ontolog.owl`](images/Ontolog.owl) — machine-readable OWL file of the proposed semantic ontology.
 
----
 
 ## 🧪 Synthetic Image Generation Examples
 
 <img src="images/Synthetic_images.png" alt="Synthetic Image Examples" width="800px">
 
-**Figure:** Examples of generated images using a referenceless ontology-guided approach.
+**Figure:** Examples of generated images using a referenceless ontology-guided approach. Left: GPT-5 synthesis, Second from left: gpt-image-1 refinement, Second from right: Recommendation-driven regeneration, Right: Gemini 3 Pro synthesis  
 
-(a) GPT-5 synthesis  
-(b) gpt-image-1 refinement  
-(c) Recommendation-driven regeneration  
-(d) Gemini 3 Pro synthesis  
+
+📂 **Image Sets (by generation stage and model):**
+- [`Naturalistic reference`](images/Naturalistic_reference/)
+- [`Generated images using OpenAI models`](images/Generated_OpenAI/)
+- [`Refined images using OpenAI models`](images/Refined_OpenAI/)
+- [`Regenerated images using OpenAI models`](images/Regenerated_OpenAI/)
+- [`Generated images using Nano Banana Pro (Gemini 3 Pro)`](images/Generated_Gemini_3_Pro/)
+
 
 ---
 
