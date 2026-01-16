@@ -1,0 +1,175 @@
+@prefix : <http://example.org/wildlife-crossing-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Ontology
+#################################################################
+
+:WildlifeCrossingImageOntology a owl:Ontology ;
+  rdfs:label "Wildlife Crossing Image Ontology"@en ;
+  rdfs:comment "OWL ontology derived from the provided class diagram for wildlife crossing scene image generation and annotation."@en .
+
+#################################################################
+# Classes
+#################################################################
+
+:Scene a owl:Class ;
+  rdfs:label "Scene"@en .
+
+:EnvironmentContext a owl:Class ;
+  rdfs:label "Environment Context"@en .
+
+:RoadInfrastructure a owl:Class ;
+  rdfs:label "Road Infrastructure"@en .
+
+:WildlifeActor a owl:Class ;
+  rdfs:label "Wildlife Actor"@en .
+
+:TrafficAgent a owl:Class ;
+  rdfs:label "Traffic Agent"@en .
+
+:SignageControl a owl:Class ;
+  rdfs:label "Signage Control"@en .
+
+:EventSemantics a owl:Class ;
+  rdfs:label "Event Semantics"@en .
+
+:CameraRenderContext a owl:Class ;
+  rdfs:label "Camera Render Context"@en .
+
+#################################################################
+# Object properties (associations)
+#################################################################
+
+:hasEnvironmentContext a owl:ObjectProperty ;
+  rdfs:label "has environment context"@en ;
+  rdfs:domain :Scene ;
+  rdfs:range :EnvironmentContext .
+
+:hasRoadInfrastructure a owl:ObjectProperty ;
+  rdfs:label "has road infrastructure"@en ;
+  rdfs:domain :Scene ;
+  rdfs:range :RoadInfrastructure .
+
+:hasWildlifeActor a owl:ObjectProperty ;
+  rdfs:label "has wildlife actor"@en ;
+  rdfs:domain :Scene ;
+  rdfs:range :WildlifeActor .
+
+:hasTrafficAgent a owl:ObjectProperty ;
+  rdfs:label "has traffic agent"@en ;
+  rdfs:domain :Scene ;
+  rdfs:range :TrafficAgent .
+
+:hasSignageControl a owl:ObjectProperty ;
+  rdfs:label "has signage/control"@en ;
+  rdfs:domain :Scene ;
+  rdfs:range :SignageControl .
+
+:hasEventSemantics a owl:ObjectProperty ;
+  rdfs:label "has event semantics"@en ;
+  rdfs:domain :Scene ;
+  rdfs:range :EventSemantics .
+
+:hasCameraRenderContext a owl:ObjectProperty ;
+  rdfs:label "has camera/render context"@en ;
+  rdfs:domain :Scene ;
+  rdfs:range :CameraRenderContext .
+
+#################################################################
+# Datatype properties (attributes)
+#################################################################
+
+# Scene attributes
+:scene_id a owl:DatatypeProperty ; rdfs:domain :Scene ; rdfs:range xsd:string ; rdfs:label "scene_id"@en .
+:scene_type a owl:DatatypeProperty ; rdfs:domain :Scene ; rdfs:range xsd:string ; rdfs:label "scene_type"@en .
+:terrain_type a owl:DatatypeProperty ; rdfs:domain :Scene ; rdfs:range xsd:string ; rdfs:label "terrain_type"@en .
+:region_metadata a owl:DatatypeProperty ; rdfs:domain :Scene ; rdfs:range xsd:string ; rdfs:label "region_metadata"@en .
+
+# EnvironmentContext attributes
+:background_env a owl:DatatypeProperty ; rdfs:domain :EnvironmentContext ; rdfs:range xsd:string ; rdfs:label "background_env"@en .
+:season a owl:DatatypeProperty ; rdfs:domain :EnvironmentContext ; rdfs:range xsd:string ; rdfs:label "season"@en .
+:timecoded a owl:DatatypeProperty ; rdfs:domain :EnvironmentContext ; rdfs:range xsd:string ; rdfs:label "timecoded"@en .
+:weather_condition a owl:DatatypeProperty ; rdfs:domain :EnvironmentContext ; rdfs:range xsd:string ; rdfs:label "weather_condition"@en .
+:lighting_condition a owl:DatatypeProperty ; rdfs:domain :EnvironmentContext ; rdfs:range xsd:string ; rdfs:label "lighting_condition"@en .
+:visibility_range a owl:DatatypeProperty ; rdfs:domain :EnvironmentContext ; rdfs:range xsd:string ; rdfs:label "visibility_range"@en .
+:temperature_feel a owl:DatatypeProperty ; rdfs:domain :EnvironmentContext ; rdfs:range xsd:string ; rdfs:label "temperature_feel"@en .
+:ground_cover a owl:DatatypeProperty ; rdfs:domain :EnvironmentContext ; rdfs:range xsd:string ; rdfs:label "ground_cover"@en .
+
+# RoadInfrastructure attributes
+:road_type a owl:DatatypeProperty ; rdfs:domain :RoadInfrastructure ; rdfs:range xsd:string ; rdfs:label "road_type"@en .
+:lane_count a owl:DatatypeProperty ; rdfs:domain :RoadInfrastructure ; rdfs:range xsd:integer ; rdfs:label "lane_count"@en .
+:road_material a owl:DatatypeProperty ; rdfs:domain :RoadInfrastructure ; rdfs:range xsd:string ; rdfs:label "road_material"@en .
+:road_features a owl:DatatypeProperty ; rdfs:domain :RoadInfrastructure ; rdfs:range xsd:string ; rdfs:label "road_features"@en .
+:road_curvature a owl:DatatypeProperty ; rdfs:domain :RoadInfrastructure ; rdfs:range xsd:string ; rdfs:label "road_curvature"@en .
+:markings_present a owl:DatatypeProperty ; rdfs:domain :RoadInfrastructure ; rdfs:range xsd:string ; rdfs:label "markings_present"@en .
+:surrounding_infrastructure a owl:DatatypeProperty ; rdfs:domain :RoadInfrastructure ; rdfs:range xsd:string ; rdfs:label "surrounding_infrastructure"@en .
+
+# WildlifeActor attributes
+:animal_species a owl:DatatypeProperty ; rdfs:domain :WildlifeActor ; rdfs:range xsd:string ; rdfs:label "animal_species"@en .
+:animal_quantity a owl:DatatypeProperty ; rdfs:domain :WildlifeActor ; rdfs:range xsd:integer ; rdfs:label "animal_quantity"@en .
+:age_category a owl:DatatypeProperty ; rdfs:domain :WildlifeActor ; rdfs:range xsd:string ; rdfs:label "age_category"@en .
+:gender_category a owl:DatatypeProperty ; rdfs:domain :WildlifeActor ; rdfs:range xsd:string ; rdfs:label "gender_category"@en .
+:coat_pattern a owl:DatatypeProperty ; rdfs:domain :WildlifeActor ; rdfs:range xsd:string ; rdfs:label "coat_pattern"@en .
+:animal_position a owl:DatatypeProperty ; rdfs:domain :WildlifeActor ; rdfs:range xsd:string ; rdfs:label "animal_position"@en .
+:animal_posture a owl:DatatypeProperty ; rdfs:domain :WildlifeActor ; rdfs:range xsd:string ; rdfs:label "animal_posture"@en .
+:animal_behavior a owl:DatatypeProperty ; rdfs:domain :WildlifeActor ; rdfs:range xsd:string ; rdfs:label "animal_behavior"@en .
+:interaction_state a owl:DatatypeProperty ; rdfs:domain :WildlifeActor ; rdfs:range xsd:string ; rdfs:label "interaction_state"@en .
+
+# TrafficAgent attributes
+:vehicle_type a owl:DatatypeProperty ; rdfs:domain :TrafficAgent ; rdfs:range xsd:string ; rdfs:label "vehicle_type"@en .
+:vehicle_count a owl:DatatypeProperty ; rdfs:domain :TrafficAgent ; rdfs:range xsd:integer ; rdfs:label "vehicle_count"@en .
+:vehicle_color a owl:DatatypeProperty ; rdfs:domain :TrafficAgent ; rdfs:range xsd:string ; rdfs:label "vehicle_color"@en .
+:vehicle_direction a owl:DatatypeProperty ; rdfs:domain :TrafficAgent ; rdfs:range xsd:string ; rdfs:label "vehicle_direction"@en .
+:vehicle_distance a owl:DatatypeProperty ; rdfs:domain :TrafficAgent ; rdfs:range xsd:string ; rdfs:label "vehicle_distance"@en .
+:speed_state a owl:DatatypeProperty ; rdfs:domain :TrafficAgent ; rdfs:range xsd:string ; rdfs:label "speed_state"@en .
+:headlight_state a owl:DatatypeProperty ; rdfs:domain :TrafficAgent ; rdfs:range xsd:string ; rdfs:label "headlight_state"@en .
+:human_presence a owl:DatatypeProperty ; rdfs:domain :TrafficAgent ; rdfs:range xsd:string ; rdfs:label "human_presence"@en .
+
+# SignageControl attributes
+:sign_type a owl:DatatypeProperty ; rdfs:domain :SignageControl ; rdfs:range xsd:string ; rdfs:label "sign_type"@en .
+:sign_language a owl:DatatypeProperty ; rdfs:domain :SignageControl ; rdfs:range xsd:string ; rdfs:label "sign_language"@en .
+:sign_symbol a owl:DatatypeProperty ; rdfs:domain :SignageControl ; rdfs:range xsd:string ; rdfs:label "sign_symbol"@en .
+:sign_position a owl:DatatypeProperty ; rdfs:domain :SignageControl ; rdfs:range xsd:string ; rdfs:label "sign_position"@en .
+:sign_condition a owl:DatatypeProperty ; rdfs:domain :SignageControl ; rdfs:range xsd:string ; rdfs:label "sign_condition"@en .
+:auxiliary_sign a owl:DatatypeProperty ; rdfs:domain :SignageControl ; rdfs:range xsd:string ; rdfs:label "auxiliary_sign"@en .
+
+# EventSemantics attributes
+:event_type a owl:DatatypeProperty ; rdfs:domain :EventSemantics ; rdfs:range xsd:string ; rdfs:label "event_type"@en .
+:risk_level a owl:DatatypeProperty ; rdfs:domain :EventSemantics ; rdfs:range xsd:string ; rdfs:label "risk_level"@en .
+:dynamics_state a owl:DatatypeProperty ; rdfs:domain :EventSemantics ; rdfs:range xsd:string ; rdfs:label "dynamics_state"@en .
+:intentionality a owl:DatatypeProperty ; rdfs:domain :EventSemantics ; rdfs:range xsd:string ; rdfs:label "intentionality"@en .
+:outcome a owl:DatatypeProperty ; rdfs:domain :EventSemantics ; rdfs:range xsd:string ; rdfs:label "outcome"@en .
+
+# CameraRenderContext attributes
+:camera_viewpoint a owl:DatatypeProperty ; rdfs:domain :CameraRenderContext ; rdfs:range xsd:string ; rdfs:label "camera_viewpoint"@en .
+:camera_angle a owl:DatatypeProperty ; rdfs:domain :CameraRenderContext ; rdfs:range xsd:string ; rdfs:label "camera_angle"@en .
+:focal_length a owl:DatatypeProperty ; rdfs:domain :CameraRenderContext ; rdfs:range xsd:string ; rdfs:label "focal_length"@en .
+:focus_depth a owl:DatatypeProperty ; rdfs:domain :CameraRenderContext ; rdfs:range xsd:string ; rdfs:label "focus_depth"@en .
+:motion_blur a owl:DatatypeProperty ; rdfs:domain :CameraRenderContext ; rdfs:range xsd:string ; rdfs:label "motion_blur"@en .
+:image_quality a owl:DatatypeProperty ; rdfs:domain :CameraRenderContext ; rdfs:range xsd:string ; rdfs:label "image_quality"@en .
+:resolution a owl:DatatypeProperty ; rdfs:domain :CameraRenderContext ; rdfs:range xsd:string ; rdfs:label "resolution"@en .
+
+#################################################################
+# Cardinality constraints (multiplicities) on Scene
+#################################################################
+
+:Scene rdfs:subClassOf
+  # exactly 1 EnvironmentContext
+  [ a owl:Restriction ; owl:onProperty :hasEnvironmentContext ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass :EnvironmentContext ],
+  # exactly 1 RoadInfrastructure
+  [ a owl:Restriction ; owl:onProperty :hasRoadInfrastructure ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass :RoadInfrastructure ],
+  # at least 1 WildlifeActor
+  [ a owl:Restriction ; owl:onProperty :hasWildlifeActor ; owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass :WildlifeActor ],
+  # 0..* TrafficAgent (no restriction needed; included for clarity)
+  [ a owl:Restriction ; owl:onProperty :hasTrafficAgent ; owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ; owl:onClass :TrafficAgent ],
+  # exactly 1 SignageControl
+  [ a owl:Restriction ; owl:onProperty :hasSignageControl ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass :SignageControl ],
+  # exactly 1 EventSemantics
+  [ a owl:Restriction ; owl:onProperty :hasEventSemantics ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass :EventSemantics ],
+  # exactly 1 CameraRenderContext
+  [ a owl:Restriction ; owl:onProperty :hasCameraRenderContext ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass :CameraRenderContext ] .
+
