@@ -59,7 +59,7 @@ The result is a **controllable, scalable, and self-improving synthetic data augm
 
 <img src="images/Synthetic_images.png" alt="Synthetic Image Examples" width="800px">
 
-**Figure:** Examples of generated images using a referenceless ontology-guided approach. Left: GPT-5 synthesis, Second from left: gpt-image-1 refinement, Second from right: Recommendation-driven regeneration, Right: Gemini 3 Pro synthesis  
+**Figure:** Examples of generated images using a referenceless ontology-guided approach. (1) GPT-5 synthesis, (b): gpt-image-1 refinement, (c) Recommendation-driven regeneration, (d) Gemini 3 Pro synthesis.
 
 
 📂 **Image Sets (by generation stage and model):**
