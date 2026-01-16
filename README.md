@@ -71,7 +71,7 @@ The result is a **controllable, scalable, and self-improving synthetic data augm
 
 ---
 
-## 📊 Sample Quantitative Results
+## 📊 Sample Objective Results (no-reference image quality assessment (IQA))
 
 The following table summarizes representative **no-reference image quality assessment (IQA)** results reported in the paper, comparing different image generation strategies. Lower values are better for **BRISQUE**, **ILNIQE**, and **PIQE**, while higher values are better for **NRQM**.
 
@@ -82,8 +82,21 @@ The following table summarizes representative **no-reference image quality asses
 | OpenAI (Recommendation-driven Regen) | 19.47     | 48.76    | 34.10  | 7.39   |
 | Gemini 3 Pro (Referenceless)         | **9.67**  | **41.31**| **32.12** | **8.36** |
 
-**Observation:**  
-Referenceless ontology-guided generation using **Gemini 3 Pro** consistently achieves the best structural naturalness and perceptual information content, outperforming both reference-based pipelines and regenerated OpenAI outputs.
+**Observation:**  Referenceless ontology-guided generation using **Gemini 3 Pro** consistently achieves the best structural naturalness and perceptual information content, outperforming both reference-based pipelines and regenerated OpenAI outputs.
+
+---
+
+## 🧑‍⚖️ Sample Subjective Evaluation Results (LMM-based & Human)
+
+The following table reports representative **subjective evaluation scores** comparing images generated using **OpenAI models** and **Nano Banana Pro (Gemini 3 Pro)** under the same referenceless ontology-guided framework.  
+Scores are reported on a **5-point Likert scale**, where higher values indicate better perceived realism and semantic consistency.
+
+| Method                         | LMM-as-a-Judge ↑ | Panel of LMMs ↑ | Human Evaluation ↑ |
+|--------------------------------|------------------|------------------|--------------------|
+| OpenAI (Regenerated)           | 4.38             | 3.90             | 2.45               |
+| Gemini 3 Pro (Referenceless)   | **4.74**         | **5.00**         | **3.54**           |
+
+**Observation:**  Gemini 3 Pro consistently outperforms OpenAI-based generation across all subjective evaluation modalities. Notably, Gemini achieves near-perfect agreement among LMM judges and substantially higher human realism scores, indicating stronger alignment with human perceptual expectations.
 
 ---
 
