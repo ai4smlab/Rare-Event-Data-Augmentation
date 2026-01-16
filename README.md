@@ -79,7 +79,8 @@ The following table summarizes representative **no-reference image quality asses
 |--------------------------------------|-----------|----------|--------|--------|
 | Naturalistic Reference               | 12.62     | 42.20    | 28.76  | 8.09   |
 | Referenceless OpenAI (Generated)     | 19.90     | 47.50    | 39.76  | 7.57   |
-| OpenAI (Recommendation-driven Regen) | 19.47     | 48.76    | 34.10  | 7.39   |
+| Referenceless OpenAI (Recommendation-driven Refined)     | 20.77     | 48.03    | 35.90  | 7.13   |
+| Referenceless OpenAI (Recommendation-driven Regen) | 19.47     | 48.76    | 34.10  | 7.39   |
 | Gemini 3 Pro (Referenceless)         | **9.67**  | **41.31**| **32.12** | **8.36** |
 
 **Observation:**  Referenceless ontology-guided generation using **Gemini 3 Pro** consistently achieves the best structural naturalness and perceptual information content, outperforming both reference-based pipelines and regenerated OpenAI outputs.
