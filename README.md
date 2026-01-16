@@ -142,10 +142,12 @@ Khamis, A., “Agentic Ontology-guided Synthetic Image Generation for Rare-Event
   journal = {Submitted to IEEE Access},
   year    = {2025}
 }
-
 ```
+
+---
 
 ## 🏁 Acknowledgment
 
 The author gratefully acknowledges **Dr. Yun-Qian Miao** for insightful discussions and collaboration in the field of image generation.This work was supported by the **Deanship of Research at King Fahd University of Petroleum and Minerals (KFUPM)** under **Grant ECR241-ISE-301**, titled: “Agentic AI-based Framework for Seamless Integrated Mobility.”
+
 ---
