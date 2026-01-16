@@ -1,0 +1,96 @@
+@startuml
+title Wildlife Crossing Image Ontology - Class Diagram
+
+' Styling (optional but helps match the look)
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam roundcorner 6
+
+class Scene {
+  scene_id : String
+  scene_type : String
+  terrain_type : String
+  region_metadata : String
+}
+
+class EnvironmentContext {
+  background_env : String
+  season : String
+  timecoded : String
+  weather_condition : String
+  lighting_condition : String
+  visibility_range : String
+  temperature_feel : String
+  ground_cover : String
+
+}
+
+class RoadInfrastructure {
+  road_type : String
+  lane_count : Integer
+  road_material : String
+  road_features : String
+  road_curvature : String
+  markings_present : String
+  surrounding_infrastructure : String
+}
+
+class WildlifeActor {
+  animal_species : String
+  animal_quantity : Integer
+  age_category : String
+  gender_category : String
+  coat_pattern : String
+  animal_position : String
+  animal_posture : String
+  animal_behavior : String
+  interaction_state : String
+}
+
+class TrafficAgent {
+  vehicle_type : String
+  vehicle_count : Integer
+  vehicle_color : String
+  vehicle_direction : String
+  vehicle_distance : String
+  speed_state : String
+  headlight_state : String
+  human_presence : String
+}
+
+class SignageControl {
+  sign_type : String
+  sign_language : String
+  sign_symbol : String
+  sign_position : String
+  sign_condition : String
+  auxiliary_sign : String
+}
+
+class EventSemantics {
+  event_type : String
+  risk_level : String
+  dynamics_state : String
+  intentionality : String
+  outcome : String
+}
+
+class CameraRenderContext {
+  camera_viewpoint : String
+  camera_angle : String
+  focal_length : String
+  focus_depth : String
+  motion_blur : String
+  image_quality : String
+  resolution : String
+}
+
+' Associations and multiplicities (as in the diagram)
+Scene "1" -- "1" EnvironmentContext
+Scene "1" -- "1" RoadInfrastructure
+Scene "1" -- "1..*" WildlifeActor
+Scene "1" -- "0..*" TrafficAgent
+Scene "1" -- "1" SignageControl
+Scene "1" -- "1" EventSemantics
+Scene "1" -- "1" CameraRenderContext
+@enduml
