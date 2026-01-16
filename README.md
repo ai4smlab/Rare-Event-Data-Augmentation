@@ -1,21 +1,20 @@
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Last Commit](https://img.shields.io/github/last-commit/your-username/Rare-Event-Data-Augmentation)
-![Repo Size](https://img.shields.io/github/repo-size/your-username/Rare-Event-Data-Augmentation)
-![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)
-![GitHub Stars](https://img.shields.io/github/stars/your-username/Rare-Event-Data-Augmentation?style=social)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ai4smlab/Rare-Event-Data-Augmentation/blob/main/LICENSE)
+![Last Commit](https://img.shields.io/github/last-commit/ai4smlab/Rare-Event-Data-Augmentation)
+![Repo Size](https://img.shields.io/github/repo-size/ai4smlab/Rare-Event-Data-Augmentation)
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![GitHub Stars](https://img.shields.io/github/stars/ai4smlab/Rare-Event-Data-Augmentation?style=social)
 
 <div align="center">
 
-# Rare-Event Data Augmentation  
-## Agentic Ontology-Guided Synthetic Image Generation
+## Agentic AI, Data Augmentation, Ontology, Image Synthesis, Image Generation, Rare-Event, Wildlife--Traffic Safety
 
-**Author:** Alaa Khamis  
+**Alaa Khamis**  
 
 </div>
 
 ---
 
-## 🧭 Project Overview
+## 🧭 Overview
 
 This repository accompanies the paper:
 
