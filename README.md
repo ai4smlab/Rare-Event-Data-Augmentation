@@ -18,7 +18,7 @@
 
 This repository accompanies the paper:
 
-> **Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife–Traffic as a Case Study**, submitted to **IEEE Access**.
+> **Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife–Traffic as a Case Study**, submitted to **Expert Systems With Applications**.
 
 The work addresses the challenge of **data scarcity in rare and safety-critical visual scenarios**, with a particular focus on **wildlife–traffic interactions**. Such events are highly stochastic, difficult to capture at scale, and often occur under adverse conditions (e.g., nighttime, fog, rural highways).
 
@@ -133,13 +133,13 @@ Scores are reported on a **5-point Likert scale**, where higher values indicate 
 
 If you use this repository, please cite:
 
-Khamis, A., “Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife–Traffic as a Case Study,” *submitted to IEEE Access*, 2025.
+Khamis, A., “Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife–Traffic as a Case Study,” *submitted to Expert Systems With Applications*, 2025.
 
 ```bibtex
 @article{khamis2025rare,
   title   = {Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife--Traffic as a Case Study},
   author  = {Khamis, Alaa},
-  journal = {Submitted to IEEE Access},
+  journal = {Submitted to Expert Systems With Applications},
   year    = {2025}
 }
 ```
