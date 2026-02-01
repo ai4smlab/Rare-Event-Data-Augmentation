@@ -35,7 +35,7 @@ The result is a **controllable, scalable, and self-improving synthetic data augm
 ---
 ## 📄 Preprint of the Paper
 
-🔗 The preprint of this work is publicly available on [**SSRN Preprint:**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6140914)
+🔗 The preprint of this work is publicly available on [**SSRN Preprint**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6140914)
 
 ---
 
