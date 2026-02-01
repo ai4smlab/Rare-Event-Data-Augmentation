@@ -33,6 +33,11 @@ To address these limitations, the paper proposes an **agentic AI-based framework
 The result is a **controllable, scalable, and self-improving synthetic data augmentation framework** that supports both reference-based and **referenceless image generation**.
 
 ---
+## 📄 Preprint of the Paper
+
+🔗 The preprint of this work is publicly available on  **SSRN Preprint:**  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6140914
+
+---
 
 ## 🧠 Agentic AI Framework
 
