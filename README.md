@@ -106,11 +106,73 @@ Scores are reported on a **5-point Likert scale**, where higher values indicate 
 
 ---
 
+## 🔎 Object Detectability Analysis
+
+Beyond perceptual realism, the paper also evaluates whether the generated images preserve **semantic cues required by downstream perception systems**. To assess this, a **zero-shot object detection analysis** was conducted using two state-of-the-art detectors:
+
+- **YOLO-World**
+- **GINO (Grounded DINO)**
+
+The analysis focuses on detecting **large animals relevant to wildlife–traffic scenarios**, including:
+
+- Camel  
+- Elephant  
+- Kangaroo  
+- Deer  
+
+Bounding-box annotations were created using **Label Studio**, enabling quantitative evaluation using standard object detection metrics.
+
+---
+
+## 📊 Detection Metrics
+
+| Metric | Description |
+|------|------|
+| **Precision** | TP / (TP + FP) |
+| **Recall** | TP / (TP + FN) |
+| **F1-score** | Harmonic mean of Precision and Recall |
+| **False Negative Rate (FNR)** | FN / (FN + TP) |
+| **False Alarm Rate (FAR)** | FP / (FP + TP) |
+| **mAP@0.50** | Mean Average Precision at IoU threshold 0.50 |
+| **mAP@0.50:0.95** | COCO-standard mAP averaged across IoU thresholds |
+| **Mean IoU (TP)** | Average IoU of matched true-positive detections |
+
+---
+
+## 📊 Sample Detection Results
+
+| Object Detector | Model | Precision | Recall | F1 | FNR | mAP@0.50 | mAP@0.50:0.95 | Mean IoU |
+|---|---|---|---|---|---|---|---|---|
+| YOLO-World | OpenAI Models | 0.80 | **0.63** | **0.90** | 0.37 | **0.57** | **0.46** | **0.93** |
+| YOLO-World | Gemini 3 Pro | **0.90** | 0.41 | 0.75 | **0.59** | 0.50 | 0.28 | 0.88 |
+| GINO | OpenAI Models | **0.98** | **1.00** | **0.98** | **0.00** | **0.97** | **0.76** | **0.93** |
+| GINO | Gemini 3 Pro | 0.92 | 0.89 | 0.93 | 0.11 | 0.73 | 0.58 | 0.88 |
+
+---
+
+## 🖼 Detection Examples
+
+![OpenAI Detection Results](images/OpenAI.png)
+
+**Figure:** Zero-shot detection examples on synthetic images generated using **OpenAI models**. Upper row: YOLO-World. Lower row: GINO.
+
+![Gemini Detection Results](images/Gemini.png)
+
+**Figure:** Zero-shot detection examples on synthetic images generated using **Gemini 3 Pro**. Upper row: YOLO-World. Lower row: GINO.
+
+
+---
+
 ## 📊 Sample Results & Brief Observations
 
 - Referenceless ontology-guided generation outperforms reference-based pipelines in perceptual realism.
 - Recommendation-driven regeneration is more effective than direct refinement.
 - Gemini 3 Pro achieves near-parity with natural images in subjective realism.
+- GINO consistently outperforms YOLO-World**, producing tighter localization and higher recall across both generation models.
+- OpenAI-generated images show stronger detectability, particularly under GINO where recall reaches **1.00**.
+- Gemini 3 Pro images often achieve higher precision, but suffer from higher missed-detection rates under YOLO-World.
+- The results demonstrate that perceptual realism alone does not guarantee downstream perception performance.
+- From a safety perspective, both false negatives (missed detections) and false alarms (spurious detections) are important in assisted and automated driving systems. Missed detections may lead to unrecognized obstacles, while excessive false alarms can trigger unnecessary braking or evasive maneuvers.
 
 ---
 
