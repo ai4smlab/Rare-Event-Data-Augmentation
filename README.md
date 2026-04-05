@@ -33,11 +33,6 @@ To address these limitations, the paper proposes an **agentic AI-based framework
 The result is a **controllable, scalable, and self-improving synthetic data augmentation framework** that supports both reference-based and **referenceless image generation**.
 
 ---
-## 📄 Preprint of the Paper
-
-🔗 The preprint of this work is publicly available on [**SSRN Preprint**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6140914)
-
----
 
 ## 🧠 Agentic AI Framework
 
@@ -200,14 +195,14 @@ Bounding-box annotations were created using **Label Studio**, enabling quantitat
 
 If you use this repository, please cite:
 
-Khamis, A., “Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife–Traffic as a Case Study,” *submitted to Machine Learning with Applications*, 2025.
+Khamis, A., “Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife–Traffic as a Case Study,” *submitted to Array*, 2026.
 
 ```bibtex
 @article{khamis2025rare,
   title   = {Agentic Ontology-guided Synthetic Image Generation for Rare-Event Data Augmentation: Wildlife--Traffic as a Case Study},
   author  = {Khamis, Alaa},
-  journal = {Submitted to Machine Learning with Applications},
-  year    = {2025}
+  journal = {Submitted to Array},
+  year    = {2026}
 }
 ```
 
