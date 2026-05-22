@@ -226,7 +226,7 @@ braking at a moderate distance, and an animal crossing sign.
 - [`Generated images using Gemini 3 Pro`](images/Generated_Gemini_3_Pro/)
 
 ### Grok-based Generation
-- [`Generated images using Grok`](images/Generated_Grok_4_20/)
+- [`Generated images using Grok 4.20`](images/Generated_Grok_4_20/)
 
 ---
 
@@ -384,10 +384,10 @@ Bounding-box annotations were prepared using:
 |---|---|---|---|---|---|---|---|---|
 | YOLO-World | OpenAI Models | 0.80 | **0.63** | **0.90** | 0.37 | **0.57** | **0.46** | **0.93** |
 | YOLO-World | Gemini 3 Pro | **0.90** | 0.41 | 0.75 | **0.59** | 0.50 | 0.28 | 0.88 |
-| YOLO-World | Grok | 0.84 | 0.52 | 0.81 | 0.48 | 0.54 | 0.39 | 0.90 |
+| YOLO-World | Grok 4.20 | 0.84 | 0.52 | 0.81 | 0.48 | 0.54 | 0.39 | 0.90 |
 | GDINO | OpenAI Models | **0.98** | **1.00** | **0.98** | **0.00** | **0.97** | **0.76** | **0.93** |
 | GDINO | Gemini 3 Pro | 0.92 | 0.89 | 0.93 | 0.11 | 0.73 | 0.58 | 0.88 |
-| GDINO | Grok | 0.95 | 0.91 | 0.94 | 0.09 | 0.81 | 0.63 | 0.90 |
+| GDINO | Grok 4.20 | 0.95 | 0.91 | 0.94 | 0.09 | 0.81 | 0.63 | 0.90 |
 
 ## Key Observation
 
