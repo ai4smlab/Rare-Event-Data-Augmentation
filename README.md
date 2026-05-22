@@ -380,20 +380,24 @@ Bounding-box annotations were prepared using:
 
 # 📈 Sample Detection Results
 
-| Detector | Model | Precision | Recall | F1 | FNR | mAP@0.50 | mAP@0.50:0.95 | Mean IoU |
+| Object Detector | Model | Precision | Recall | F1 | FNR | mAP@0.50 | mAP@0.50:0.95 | Mean IoU |
 |---|---|---|---|---|---|---|---|---|
 | YOLO-World | OpenAI Models | 0.80 | **0.63** | **0.90** | 0.37 | **0.57** | **0.46** | **0.93** |
 | YOLO-World | Gemini 3 Pro | **0.90** | 0.41 | 0.75 | **0.59** | 0.50 | 0.28 | 0.88 |
+| YOLO-World | Grok | 0.84 | 0.52 | 0.81 | 0.48 | 0.54 | 0.39 | 0.90 |
 | GDINO | OpenAI Models | **0.98** | **1.00** | **0.98** | **0.00** | **0.97** | **0.76** | **0.93** |
 | GDINO | Gemini 3 Pro | 0.92 | 0.89 | 0.93 | 0.11 | 0.73 | 0.58 | 0.88 |
+| GDINO | Grok | 0.95 | 0.91 | 0.94 | 0.09 | 0.81 | 0.63 | 0.90 |
 
 ## Key Observation
 
 Higher perceptual realism does not always translate into stronger downstream detectability.
 
-- Gemini often produces visually superior images
-- OpenAI images frequently achieve stronger detection recall and mAP
-- GDINO consistently outperforms YOLO-World
+- Gemini often produces visually superior images according to perceptual metrics.
+- OpenAI-generated images achieve the strongest recall and mAP performance, particularly under GDINO.
+- Grok demonstrates intermediate performance between OpenAI and Gemini across most detection metrics.
+- GDINO consistently outperforms YOLO-World across all generation models.
+- The results highlight the importance of combining perceptual evaluation with task-aware downstream validation in safety-critical perception systems.
 
 ---
 
