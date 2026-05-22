@@ -20,12 +20,6 @@ King Fahd University of Petroleum and Minerals (KFUPM)
 
 ## 🧭 Overview
 
-This repository accompanies the paper:
-
-> **Agentic Ontology-guided Image Generation and Evaluation for Rare-Event Data Augmentation in Safety-Critical Perception**
->
-> Accepted to be published in **Array**.
-
 The work addresses the challenge of **rare-event data scarcity in safety-critical perception systems**, where dangerous but infrequent events are difficult to collect at scale because of:
 
 - Low-frequency occurrence
