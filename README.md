@@ -215,7 +215,7 @@ braking at a moderate distance, and an animal crossing sign.
 
 <img src="images/OpenAIvsGeminivsGrok.png" alt="Synthetic Image Examples" width="900px">
 
-**Figure:** Qualitative comparison of referenceless ontology-guided synthetic image generation. (a) OpenAI initial synthesis using GPT-5, (b) OpenAI direct refinement using \texttt{gpt-image-1}, (c) OpenAI recommendation-driven regeneration using \texttt{gpt-image-1}, (d) Grok~4.20, and (e) Gemini~3~Pro Image..
+**Figure:** Qualitative comparison of referenceless ontology-guided synthetic image generation. (a) OpenAI initial synthesis using GPT-5, (b) OpenAI direct refinement using gpt-image-1, (c) OpenAI recommendation-driven regeneration using gpt-image-1, (d) Grok 4.20, and (e) Gemini 3~Pro Image..
 
 ## 📂 Image Collections
 
