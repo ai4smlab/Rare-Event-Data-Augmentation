@@ -1,5 +1,3 @@
-# Agentic Ontology-guided Image Generation and Evaluation for Rare-Event Data Augmentation in Safety-Critical Perception
-
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ai4smlab/Rare-Event-Data-Augmentation/blob/main/LICENSE)
 ![Last Commit](https://img.shields.io/github/last-commit/ai4smlab/Rare-Event-Data-Augmentation)
 ![Repo Size](https://img.shields.io/github/repo-size/ai4smlab/Rare-Event-Data-Augmentation)
@@ -176,9 +174,9 @@ This improves:
 - Object integration
 - Background preservation
 
-<img src="images/Reference_based.png" alt="Reference-based Generation" width="900px">
+<img src="images/SinglevsTwo_Stage.png" alt="Reference-based Generation" width="900px">
 
-**Figure:** Comparison between single-stage and two-stage reference-based generation.
+**Figure:** Comparison between single-stage (Upper) and two-stage (Lower) reference-based generation.
 
 ---
 
@@ -215,9 +213,9 @@ braking at a moderate distance, and an animal crossing sign.
 
 # 🧪 Synthetic Image Generation Examples
 
-<img src="images/Synthetic_images.png" alt="Synthetic Image Examples" width="900px">
+<img src="images/OpenAIvsGeminivsGrok.png" alt="Synthetic Image Examples" width="900px">
 
-**Figure:** Examples of generated synthetic wildlife–traffic images.
+**Figure:** Qualitative comparison of referenceless ontology-guided synthetic image generation. (a) OpenAI initial synthesis using GPT-5, (b) OpenAI direct refinement using \texttt{gpt-image-1}, (c) OpenAI recommendation-driven regeneration using \texttt{gpt-image-1}, (d) Grok~4.20, and (e) Gemini~3~Pro Image..
 
 ## 📂 Image Collections
 
@@ -233,7 +231,7 @@ braking at a moderate distance, and an animal crossing sign.
 - [`Generated images using Gemini 3 Pro`](images/Generated_Gemini_3_Pro/)
 
 ### Grok-based Generation
-- [`Generated images using Grok`](images/Generated_Grok/)
+- [`Generated images using Grok`](images/Generated_Grok_4_20/)
 
 ---
 
@@ -262,11 +260,9 @@ Higher values are better for:
 
 | Method | BRISQUE ↓ | ILNIQE ↓ | PIQE ↓ | NRQM ↑ |
 |---|---|---|---|---|
-| Naturalistic Reference | 12.62 | 42.20 | 28.76 | 8.09 |
-| Referenceless OpenAI (Generated) | 19.90 | 47.50 | 39.76 | 7.57 |
-| Referenceless OpenAI (Refined) | 20.77 | 48.03 | 35.90 | 7.13 |
 | Referenceless OpenAI (Regenerated) | 19.47 | 48.76 | 34.10 | 7.39 |
 | Referenceless Gemini 3 Pro | **9.67** | **41.31** | **32.12** | **8.36** |
+|Referenceless  Grok 4.20 | 11.55 | 42.99 | 34.48 | 8.13|
 
 ## Observation
 
@@ -309,6 +305,7 @@ Images are evaluated based on:
 |---|---|---|---|
 | OpenAI (Regenerated) | 4.38 | 3.90 | 2.45 |
 | Gemini 3 Pro (Referenceless) | **4.74** | **5.00** | **3.54** |
+| Grok 4.20    | 3.60 |  4.00 |  2.31 | 
 
 ## Observation
 
@@ -414,6 +411,10 @@ Higher perceptual realism does not always translate into stronger downstream det
 ![Gemini Detection Results](images/Gemini.png)
 
 **Figure:** Zero-shot detection results for Gemini-generated synthetic images.
+
+![Grok Detection Results](images/Grok.png)
+
+**Figure:** Zero-shot detection results for Grok-generated synthetic images.
 
 ---
 
