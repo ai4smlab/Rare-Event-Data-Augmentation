@@ -11,6 +11,7 @@
 **Alaa Khamis**  
 AI for Smart Mobility Lab  
 Interdisciplinary Research Center for Smart Mobility and Logistics  
+Department of Industrial and Systems Engineering
 King Fahd University of Petroleum and Minerals (KFUPM)
 
 </div>
