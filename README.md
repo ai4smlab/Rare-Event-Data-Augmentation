@@ -5,7 +5,9 @@
 ![GitHub Stars](https://img.shields.io/github/stars/ai4smlab/Rare-Event-Data-Augmentation?style=social)
 
 <div align="center">
+
 ## Agentic Ontology-guided Image Generation and Evaluation for Rare-Event Data Augmentation in Safety-Critical Perception
+
 </div>
 
 <br><br>
