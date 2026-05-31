@@ -10,8 +10,6 @@
 
 </div>
 
----
-
 ## 🧭 Overview
 
 The work addresses the challenge of **rare-event data scarcity in safety-critical perception systems**, where dangerous but infrequent events are difficult to collect at scale because of:
@@ -473,7 +471,7 @@ Does higher perceptual realism translate into stronger downstream object detecta
 │   ├── Refined_OpenAI/
 │   ├── Regenerated_OpenAI/
 │   ├── Generated_Gemini_3_Pro/
-│   └── Generated_Grok/
+│   └── Generated_Grok_4_20/
 └── README.md
 ```
 
