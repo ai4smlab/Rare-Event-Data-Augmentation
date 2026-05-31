@@ -8,12 +8,6 @@
 
 ## Agentic Ontology-guided Image Generation and Evaluation for Rare-Event Data Augmentation in Safety-Critical Perception
 
-**Alaa Khamis**  
-AI for Smart Mobility Lab  
-Interdisciplinary Research Center for Smart Mobility and Logistics  
-Department of Industrial and Systems Engineering  
-King Fahd University of Petroleum and Minerals (KFUPM)
-
 </div>
 
 ---
@@ -489,12 +483,19 @@ Does higher perceptual realism translate into stronger downstream object detecta
 
 If you use this repository, please cite:
 
+**Text Citation**
+
+Khamis, A. (2026). *Agentic Ontology-guided Image Generation and Evaluation for Rare-Event Data Augmentation in Safety-Critical Perception*. *Array*. https://doi.org/10.1016/j.array.2026.100932
+
+**BibTeX**
+
 ```bibtex
 @article{khamis2026agentic,
   title   = {Agentic Ontology-guided Image Generation and Evaluation for Rare-Event Data Augmentation in Safety-Critical Perception},
   author  = {Khamis, Alaa},
   journal = {Array},
-  year    = {2026}
+  year    = {2026},
+  doi     = {10.1016/j.array.2026.100932}
 }
 ```
 
@@ -502,17 +503,7 @@ If you use this repository, please cite:
 
 # 🏁 Acknowledgment
 
-The author gratefully acknowledges:
-
-- **Dr. Yun-Qian Miao** for insightful discussions and collaboration in image generation research.
-- The **Deanship of Research at King Fahd University of Petroleum and Minerals (KFUPM)** for supporting this work under Grant:
-
-> **ECR241-ISE-301**  
-> *Agentic AI-based Framework for Seamless Integrated Mobility*
+The author gratefully acknowledges Dr. Yun-Qian Miao for insightful discussions and collaboration in image generation research. The author also acknowledges the support of the Deanship of Research at King Fahd University of Petroleum and Minerals (KFUPM) through Grant ECR241-ISE-301, “Agentic AI-based Framework for Seamless Integrated Mobility,” which supported this work.
 
 ---
-
-# 📜 License
-
-This project is released under the MIT License.
 
