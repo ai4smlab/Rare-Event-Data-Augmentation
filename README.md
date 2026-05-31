@@ -49,7 +49,7 @@ and enables controlled comparison across foundation models including:
 
 ---
 
-# 📌 Highlights
+## 📌 Highlights
 
 - Agentic ontology-guided framework for rare-event synthetic image generation and evaluation
 - Comparative evaluation of reference-based and referenceless generation under shared ontology constraints
@@ -60,7 +60,7 @@ and enables controlled comparison across foundation models including:
 
 ---
 
-# 🧠 Agentic AI-based Framework
+## 🧠 Agentic AI-based Framework
 
 <img src="images/Workflow.png" alt="Agentic AI Workflow" width="900px">
 
@@ -83,7 +83,7 @@ The framework operates as a **closed-loop multi-agent system**:
 
 ---
 
-# 🧩 Semantic Ontology
+## 🧩 Semantic Ontology
 
 <img src="images/Ontolog.svg" alt="Ontology Class Diagram" width="900px">
 
@@ -122,7 +122,7 @@ This structure enables:
 - Cross-model comparison
 - Semantic consistency validation
 
-## 📄 Ontology Resources
+### 📄 Ontology Resources
 
 - [`Ontolog.owl`](codes/Ontolog.owl) — OWL ontology specification
 - [`Ontolog_PlantUML.txt`](codes/Ontolog_PlantUML.txt) — PlantUML source file
@@ -131,15 +131,15 @@ This structure enables:
 
 ---
 
-# 🖼 Reference-based Image Generation
+## 🖼 Reference-based Image Generation
 
 The framework supports two reference-based image editing strategies.
 
-## 1️⃣ Single-stage Replacement
+### 1️⃣ Single-stage Replacement
 
 The original animal is directly replaced in a single operation while preserving the surrounding scene.
 
-### Prompt Template
+#### Prompt Template
 
 ```text
 Replace only the {REF_ANIMAL} inside the mask with {TARGET_ANIMAL}.
@@ -147,7 +147,7 @@ Preserve every unmasked pixel exactly.
 Match pose, scale, perspective, and shadow direction.
 ```
 
-## 2️⃣ Two-stage Remove-and-Insert
+### 2️⃣ Two-stage Remove-and-Insert
 
 The process is decomposed into:
 
@@ -167,7 +167,7 @@ This improves:
 
 ---
 
-# 🌌 Referenceless Ontology-guided Image Generation
+## 🌌 Referenceless Ontology-guided Image Generation
 
 The referenceless mode generates complete wildlife–traffic scenes directly from ontology-guided prompts without relying on source imagery.
 
@@ -187,7 +187,7 @@ The same ontology instances are used across:
 
 allowing fair comparative evaluation.
 
-## Example Prompt Structure
+### Example Prompt Structure
 
 ```text
 Generate a high-resolution, photorealistic image of two adult elk
@@ -198,31 +198,31 @@ braking at a moderate distance, and an animal crossing sign.
 
 ---
 
-# 🧪 Synthetic Image Generation Examples
+## 🧪 Synthetic Image Generation Examples
 
 <img src="images/OpenAIvsGeminivsGrok.png" alt="Synthetic Image Examples" width="900px">
 
 **Figure:** Qualitative comparison of referenceless ontology-guided synthetic image generation. (a) OpenAI initial synthesis using GPT-5, (b) OpenAI direct refinement using gpt-image-1, (c) OpenAI recommendation-driven regeneration using gpt-image-1, (d) Grok 4.20, and (e) Gemini 3~Pro Image..
 
-## 📂 Image Collections
+### 📂 Image Collections
 
-### Naturalistic Reference Images
+#### Naturalistic Reference Images
 - [`Naturalistic reference`](images/Naturalistic_reference/)
 
-### OpenAI-based Generation
+#### OpenAI-based Generation
 - [`Generated images using OpenAI models`](images/Generated_OpenAI/)
 - [`Refined images using OpenAI models`](images/Refined_OpenAI/)
 - [`Regenerated images using OpenAI models`](images/Regenerated_OpenAI/)
 
-### Gemini-based Generation
+#### Gemini-based Generation
 - [`Generated images using Gemini 3 Pro`](images/Generated_Gemini_3_Pro/)
 
-### Grok-based Generation
+#### Grok-based Generation
 - [`Generated images using Grok 4.20`](images/Generated_Grok_4_20/)
 
 ---
 
-# 📊 Objective No-reference Image Quality Assessment (IQA)
+## 📊 Objective No-reference Image Quality Assessment (IQA)
 
 The framework evaluates synthetic images using objective no-reference metrics:
 
@@ -243,7 +243,7 @@ Higher values are better for:
 
 - NRQM
 
-## Sample IQA Results
+### Sample IQA Results
 
 | Method | BRISQUE ↓ | ILNIQE ↓ | PIQE ↓ | NRQM ↑ |
 |---|---|---|---|---|
@@ -251,13 +251,13 @@ Higher values are better for:
 | Referenceless Gemini 3 Pro | **9.67** | **41.31** | **32.12** | **8.36** |
 |Referenceless  Grok 4.20 | 11.55 | 42.99 | 34.48 | 8.13|
 
-## Observation
+### Observation
 
 Gemini 3 Pro achieves the strongest perceptual realism according to objective no-reference quality metrics.
 
 ---
 
-# 🧑‍⚖️ Subjective Evaluation
+## 🧑‍⚖️ Subjective Evaluation
 
 Subjective evaluation combines:
 
@@ -273,7 +273,7 @@ The framework uses GPT-5 as the primary evaluation agent and additionally incorp
 - o3
 - gpt-5
 
-## Evaluation Criteria
+### Evaluation Criteria
 
 Images are evaluated based on:
 
@@ -286,7 +286,7 @@ Images are evaluated based on:
 - Artifact severity
 - Safety-critical interaction plausibility
 
-## Sample Subjective Results
+### Sample Subjective Results
 
 | Method | LMM-as-a-Judge ↑ | Panel of LMMs ↑ | Human Evaluation ↑ |
 |---|---|---|---|
@@ -300,7 +300,7 @@ Gemini 3 Pro consistently achieves the highest perceptual realism across machine
 
 ---
 
-# 🔄 Closed-loop Refinement and Regeneration
+## 🔄 Closed-loop Refinement and Regeneration
 
 When generated images fail to satisfy the predefined quality threshold:
 
@@ -309,7 +309,7 @@ When generated images fail to satisfy the predefined quality threshold:
 3. Images are either refined or regenerated
 4. Re-evaluation is performed automatically
 
-## Example LMM Feedback
+### Example LMM Feedback
 
 ```text
 Add stronger, consistent shadows for lampposts, signs, and animals;
@@ -317,14 +317,14 @@ introduce micro-textures and tire marks on the road; refine realistic
 lane markings; improve atmospheric haze and object contact details.
 ```
 
-## Refinement Prompt
+### Refinement Prompt
 
 ```text
 Refine the realism of this image based on the following feedback:
 {recommendation}
 ```
 
-## Regeneration Prompt
+### Regeneration Prompt
 
 ```text
 Regenerate the image realistically while preserving the main composition,
@@ -333,7 +333,7 @@ structure, and semantic intent.
 
 ---
 
-# 🔎 Downstream Object Detectability Analysis
+## 🔎 Downstream Object Detectability Analysis
 
 Perceptual realism alone does not guarantee downstream perception performance.
 
@@ -355,7 +355,7 @@ Bounding-box annotations were prepared using:
 
 ---
 
-# 📊 Detection Metrics
+## 📊 Detection Metrics
 
 | Metric | Description |
 |---|---|
@@ -370,7 +370,7 @@ Bounding-box annotations were prepared using:
 
 ---
 
-# 📈 Sample Detection Results
+## 📈 Sample Detection Results
 
 | Object Detector | Model | Precision | Recall | F1 | FNR | mAP@0.50 | mAP@0.50:0.95 | Mean IoU |
 |---|---|---|---|---|---|---|---|---|
@@ -381,7 +381,7 @@ Bounding-box annotations were prepared using:
 | GDINO | Gemini 3 Pro | 0.92 | 0.89 | 0.93 | 0.11 | 0.73 | 0.58 | 0.88 |
 | GDINO | Grok 4.20 | 0.95 | 0.91 | 0.94 | 0.09 | 0.81 | 0.63 | 0.90 |
 
-## Key Observation
+### Key Observation
 
 Higher perceptual realism does not always translate into stronger downstream detectability.
 
@@ -393,7 +393,7 @@ Higher perceptual realism does not always translate into stronger downstream det
 
 ---
 
-# 🖼 Detection Examples
+## 🖼 Detection Examples
 
 ![OpenAI Detection Results](images/OpenAI.png)
 
@@ -409,25 +409,25 @@ Higher perceptual realism does not always translate into stronger downstream det
 
 ---
 
-# ❓ Research Questions
+## ❓ Research Questions
 
 The paper investigates the following research questions:
 
-### RQ1
+#### RQ1
 How do reference-based and referenceless ontology-guided generation methods compare using objective and subjective metrics?
 
-### RQ2
+#### RQ2
 To what extent do refinement and recommendation-driven regeneration improve image quality?
 
-### RQ3
+#### RQ3
 How do OpenAI, Gemini, and Grok compare under identical ontology-guided prompts?
 
-### RQ4
+#### RQ4
 Does higher perceptual realism translate into stronger downstream object detectability?
 
 ---
 
-# 🎯 Main Contributions
+## 🎯 Main Contributions
 
 - Agentic ontology-guided framework for rare-event synthetic image generation
 - Semantic control using a formal ontology
@@ -440,7 +440,7 @@ Does higher perceptual realism translate into stronger downstream object detecta
 
 ---
 
-# 🚗 Applications
+## 🚗 Applications
 
 - Autonomous driving perception
 - Wildlife–vehicle collision prevention
@@ -453,7 +453,7 @@ Does higher perceptual realism translate into stronger downstream object detecta
 
 ---
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
 ```text
 .
@@ -477,7 +477,7 @@ Does higher perceptual realism translate into stronger downstream object detecta
 
 ---
 
-# 🔖 Citation
+## 🔖 Citation
 
 If you use this repository, please cite:
 
@@ -499,7 +499,7 @@ Khamis, A. (2026). *Agentic Ontology-guided Image Generation and Evaluation for 
 
 ---
 
-# 🏁 Acknowledgment
+## 🏁 Acknowledgment
 
 The author gratefully acknowledges Dr. Yun-Qian Miao for insightful discussions and collaboration in image generation research. The author also acknowledges the support of the Deanship of Research at King Fahd University of Petroleum and Minerals (KFUPM) through Grant ECR241-ISE-301, “Agentic AI-based Framework for Seamless Integrated Mobility,” which supported this work.
 
