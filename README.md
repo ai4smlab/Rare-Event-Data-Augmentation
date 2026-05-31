@@ -6,15 +6,9 @@
 
 <div align="center">
 
-<br>
-
 ## Agentic Ontology-guided Image Generation and Evaluation for Rare-Event Data Augmentation in Safety-Critical Perception
 
-<br>
-
 </div>
-
-
 
 ## 🧭 Overview
 
